@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: darkblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#player {
+    text-decoration: underline;
+}
+
+#grid {
+    width: 640px;
+    height: 640px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.square {
+    background-color: white;
+}
+
+.square:hover {
+    border: 10px solid red;
+}
+
+.red:hover, .blue:hover {
+    border: none;
+}
+
+.red {
+    background-color: rgb(251, 150, 150);
+}
+
+.blue {
+    background-color: rgb(192, 192, 251);
+}
